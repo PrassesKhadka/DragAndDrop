@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
 	const [widgets, setWidgets] = useState<string[]>([]);
@@ -17,6 +18,7 @@ export default function Home() {
 
 	function handleOnDrop(e: React.DragEvent) {
 		const widgetType = e.dataTransfer.getData("widgetType") as string;
+
 		setWidgets([...widgets, widgetType]);
 		setBgColor("green");
 	}
