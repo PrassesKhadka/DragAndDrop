@@ -13,7 +13,7 @@ const data: Idata[] = [
 function Dnd() {
 	return (
 		<div>
-			<header className="bg-slate-800 flex w-screen min-h-screen ">
+			<header className="bg-slate-800 flex justify-center items-center w-screen min-h-screen ">
 				<DragNDrop data={data} />
 			</header>
 		</div>
